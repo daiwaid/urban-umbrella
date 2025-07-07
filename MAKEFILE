@@ -1,0 +1,9 @@
+.PHONY: install run demo
+
+install:
+	pip install -e .
+
+run:
+	python -m recommender.run
+
+demo: install run
